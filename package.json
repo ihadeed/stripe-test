@@ -10,8 +10,8 @@
         "lint": "ionic-app-scripts lint",
         "ionic:build": "ionic-app-scripts build",
         "ionic:serve": "ionic-app-scripts serve",
-      "reset-plugin": "cordova plugin rm cordova-plugin-stripe && cordova plugin add --link ../cordova-plugin-stripe",
-      "full-reset": "cordova plugin rm cordova-plugin-stripe && rm -rf platforms && cordova platform add ios && cordova plugin add --link ../cordova-plugin-stripe"
+        "reset-plugin": "cordova plugin rm cordova-plugin-stripe && cordova plugin add --link ../cordova-plugin-stripe",
+        "full-reset": "cordova plugin rm cordova-plugin-stripe && rm -rf platforms && cordova platform add ios && cordova platform add android && cordova plugin add --link ../cordova-plugin-stripe"
     },
     "dependencies": {
         "@angular/common": "5.0.3",
@@ -26,18 +26,18 @@
         "@ionic-native/splash-screen": "4.4.0",
         "@ionic-native/status-bar": "4.4.0",
         "@ionic/storage": "2.1.3",
-        "ionic-angular": "3.9.2",
-        "ionicons": "3.0.0",
-        "rxjs": "5.5.2",
-        "sw-toolbox": "3.6.0",
-        "zone.js": "0.8.18",
-        "cordova-ios": "~4.4.0",
+        "cordova-android": "^7.1.4",
+        "cordova-ios": "^4.5.5",
         "cordova-plugin-device": "~1.1.4",
         "cordova-plugin-ionic-webview": "^1.1.11",
         "cordova-plugin-splashscreen": "~4.0.1",
-        "cordova-plugin-stripe": "../cordova-plugin-stripe",
         "cordova-plugin-whitelist": "~1.3.1",
-        "ionic-plugin-keyboard": "~2.2.1"
+        "ionic-angular": "3.9.2",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "ionicons": "3.0.0",
+        "rxjs": "5.5.2",
+        "sw-toolbox": "3.6.0",
+        "zone.js": "0.8.18"
     },
     "devDependencies": {
         "@ionic/app-scripts": "3.1.8",
@@ -54,7 +54,8 @@
             "cordova-plugin-stripe": {}
         },
         "platforms": [
-            "ios"
+            "ios",
+            "android"
         ]
     }
 }
